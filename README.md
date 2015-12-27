@@ -11,7 +11,7 @@ This is a small utility program which injects bytes into a file at a specific of
 	injector [options] <file> <offset> <string>
 	  -t <table>  sets the table file
 
-The following example injects the string "Hello, World!" into a file at the offset 0xF000 using a table to translate the string into non-ASCII characters:
+The following example injects the string `Hello, World!` into a file at the offset `0xF000` using a table to translate the string into non-ASCII characters:
 
 	injector -t table.tbl file.bin 0xF000 "Hello, World!"
 
